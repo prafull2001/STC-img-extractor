@@ -1,0 +1,4 @@
+ninja
+cmake
+lpips
+opencv-contrib-python

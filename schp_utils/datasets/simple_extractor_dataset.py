@@ -16,7 +16,7 @@ import cv2
 import numpy as np
 
 from torch.utils import data
-from .utils.transforms import get_affine_transform
+from utils.transforms import get_affine_transform
 
 
 class SimpleFolderDataset(data.Dataset):
@@ -27,7 +27,8 @@ class SimpleFolderDataset(data.Dataset):
         self.aspect_ratio = input_size[1] * 1.0 / input_size[0]
         self.input_size = np.asarray(input_size)
 
-        self.file_list = os.listdir(self.root)
+        # Filter for image files only
+        self.file_list = [f for f in os.listdir(self.root) if os.path.isfile(os.path.join(self.root, f)) and f.lower().endswith(('.jpg', '.jpeg', '.png', '.bmp'))]
 
     def __len__(self):
         return len(self.file_list)

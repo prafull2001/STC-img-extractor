@@ -1,0 +1,39 @@
+name: schp
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - ca-certificates=2020.12.8
+  - certifi=2020.12.5
+  - freetype=2.10.4
+  - jpeg
+  - dlib=19.24.0
+  - lcms2=2.11
+  - libedit=3.1.20191231
+  - libffi=3.3
+  - libpng=1.6.37
+  - libtiff=4.1.0
+  - lz4-c=1.9.2
+  - ncurses=6.2
+  - ninja=1.10.2
+  - numpy
+  - olefile=0.46
+  - openssl=1.1.1
+  - pillow
+  - pip
+  - python=3.8
+  - readline
+  - setuptools
+  - six
+  - sqlite
+  - tk
+  - tqdm
+  - wheel
+  - xz
+  - zlib
+  - zstd
+  - pytorch=1.5.1
+  - torchvision=0.6.1
+# Optionally remove or update the prefix line for your system
+prefix: /home/peike/opt/anaconda3/envs/schp
