@@ -18,7 +18,7 @@ Clone the CPU version of the repository:
 
 ```
 bash
-git clone https://github.com/prafull2001/STC-img-extractor.git
+git clone git@github.com:prafull2001/STC-img-extractor.git
 
 cd STC-img-extractor
 
